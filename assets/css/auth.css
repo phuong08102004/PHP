@@ -1,0 +1,129 @@
+/* =====================
+   HONEYBEE AUTH CSS
+   Dùng cho login() & register()
+===================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff9d9; /* vàng nhạt HoneyBee */
+}
+
+/* SECTION */
+.login-section,
+.register-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARD */
+.login-wrapper,
+.register-card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+.login-title,
+.register-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.login-sub,
+.register-sub {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* INPUT */
+.login-wrapper .form-control,
+.register-card .form-control {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.login-wrapper .form-control:focus,
+.register-card .form-control:focus {
+    border-color: #F3C623;
+    box-shadow: 0 0 0 2px rgba(243,198,35,0.25);
+}
+
+/* BUTTON */
+.btn-login,
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background: #F3C623;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    background: #e0b41f;
+    transform: translateY(-1px);
+}
+
+/* ERROR */
+.login-error,
+.register-error {
+    background: #ffe5e5;
+    color: #b30000;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* FOOTER */
+.login-footer,
+.register-footer {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.login-footer a,
+.register-footer a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-footer a:hover,
+.register-footer a:hover {
+    color: #F3C623;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .login-wrapper,
+    .register-card {
+        padding: 25px 20px;
+        margin: 0 10px;
+    }
+}

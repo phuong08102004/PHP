@@ -1,0 +1,571 @@
+/* =====================
+   HONEYBEE THEME
+===================== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+
+/* =====================
+   HONEYBEE NAVBAR
+===================== */
+
+/* NỀN NAVBAR */
+.navbar {
+    background-color: #000 !important;
+    font-weight: 600;
+}
+
+/* LOGO */
+.navbar-brand img {
+    object-fit: contain;
+}
+
+/* MENU LINK */
+.navbar .nav-link {
+    color: #fff !important;
+    margin-right: 22px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #F3C623 !important;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000 !important;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #F3C623 !important;
+    color: #000 !important;
+}
+
+/* CART ICON */
+.navbar img[src*="cart"] {
+    filter: brightness(0) invert(1);
+    transition: 0.3s;
+}
+
+.navbar a:hover img[src*="cart"] {
+    filter: brightness(1) sepia(1) saturate(500%) hue-rotate(10deg);
+}
+
+/* CART NUMBER */
+.navbar i {
+    font-style: normal;
+    background: #F3C623;
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+/* SEARCH */
+.navbar form input {
+    border-radius: 20px;
+    border: 2px solid #F3C623;
+}
+
+.navbar form button {
+    border-radius: 20px;
+    border: 2px solid #F3C623;
+    color: #F3C623;
+}
+
+.navbar form button:hover {
+    background: #F3C623;
+    color: #000;
+}
+/* =====================
+   HONEYBEE THEME
+===================== */
+
+:root{
+    --honey-yellow: #f3c623;
+    --honey-yellow-dark: #f1b700;
+    --honey-black: #000;
+    --honey-gray: #313131;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 0;
+}
+
+/* =====================
+   WELCOME BAR
+===================== */
+.honey-welcome-bar{
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--honey-yellow);
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar{
+    background-color: var(--honey-black);
+}
+
+.navbar .nav-link,
+.menu-link{
+    color: #fff !important;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.navbar .nav-link:hover,
+.menu-link:hover{
+    color: var(--honey-yellow) !important;
+}
+
+/* Dropdown */
+.dropdown-menu{
+    border-radius: 0;
+}
+.dropdown-menu a{
+    color: #000 !important;
+}
+.dropdown-menu a:hover{
+    background: var(--honey-yellow);
+    color: #000 !important;
+}
+
+/* LOGO GIỮA */
+.nav-logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* =====================
+   SEARCH
+===================== */
+.honey-search-box{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid var(--honey-yellow);
+    border-radius: 20px;
+    padding: 3px 6px;
+}
+
+.honey-search-input{
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    width: 160px;
+}
+
+.honey-search-btn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* =====================
+   ICONS + CART
+===================== */
+.icon-link img{
+    filter: brightness(0) invert(1);
+    transition: 0.25s;
+}
+.icon-link:hover img{
+    filter: brightness(1) sepia(1) saturate(500%) hue-rotate(10deg);
+}
+
+.cart-badge{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--honey-yellow);
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* =====================
+   PRODUCT CARD
+===================== */
+.product-card{
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.product-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.product-img img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.product-info{
+    padding: 15px;
+    text-align: center;
+}
+
+.product-name{
+    font-size: 16px;
+    font-weight: 600;
+    min-height: 45px;
+}
+
+.product-price{
+    color: #d35400;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.btn-honey{
+    background: var(--honey-yellow);
+    border: none;
+    padding: 7px 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn-honey:hover{
+    background: var(--honey-yellow-dark);
+}
+
+/* =====================
+   FOOTER
+===================== */
+#footer-section-v2 .footer-main-content-v2{
+    background-color: var(--honey-gray);
+    color: #fff;
+}
+
+.footer-heading-v2{
+    color: var(--honey-yellow);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.footer-links-v2 a{
+    color: rgba(255,255,255,0.7) !important;
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+.footer-links-v2 a:hover{
+    color: var(--honey-yellow) !important;
+}
+
+.footer-copyright-v2{
+    background-color: #f3a607;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+
+.back-to-top-btn{
+    position: absolute;
+    right: 15px;
+    top: -40px;
+    background-color: var(--honey-yellow);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 6px;
+    color: #000;
+    font-weight: bold;
+}
+/* LOGIN – HONEYBEE */
+.login-section {
+    min-height: 100vh;
+    background: #fff9e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper {
+    width: 420px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    border-left: 6px solid #F3C623;
+}
+
+.login-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.login-sub {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.login-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.login-wrapper .form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.login-wrapper .form-control:focus {
+    border-color: #F3C623;
+    box-shadow: 0 0 6px rgba(243,198,35,0.5);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #F3C623;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #e1b311;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.login-footer a {
+    font-weight: 600;
+    color: #000;
+}
+
+.login-footer a:hover {
+    color: #F3C623;
+}
+.honey-hero {
+    width: 100%;
+    height: 480px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/jumbotron.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.honey-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); /* lớp phủ tối */
+    z-index: 1;
+}
+
+/* CHỮ TRÊN JUMBOTRON */
+.honey-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;               /* 🔥 QUAN TRỌNG */
+}
+
+.honey-hero-content h1 {
+    color: #fff;               /* 🔥 ép trắng */
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.honey-hero-content p {
+    color: #f9f9f9;            /* trắng nhạt */
+    font-size: 20px;
+}
+.honey-welcome-bar{
+    background:#f3c623;
+    text-align:center;
+    padding:6px 0;
+    font-weight:600;
+}
+
+.honey-navbar{
+    background:#000;
+}
+
+.menu-link{
+    color:#fff !important;
+    font-weight:600;
+    margin-right:20px;
+}
+
+.menu-link:hover{
+    color:#f3c623 !important;
+}
+
+.nav-logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.honey-search-box{
+    display:flex;
+    border:1px solid #f3c623;
+    border-radius:20px;
+    overflow:hidden;
+    margin-right:15px;
+}
+
+.honey-search-input{
+    border:none;
+    padding:5px 10px;
+    outline:none;
+}
+
+.honey-search-btn{
+    background:#f3c623;
+    border:none;
+    padding:0 10px;
+}
+
+.cart-badge{
+    position:absolute;
+    top:-5px;
+    right:-10px;
+    background:red;
+    color:white;
+    font-size:12px;
+    border-radius:50%;
+    padding:2px 6px;
+}
+/* 1. Banner chính (Hero Section) - Chuyển từ đen sang vàng nhạt */
+.about-hero {
+    background: #fff9e6; /* Màu vàng kem mật ong nhạt */
+    padding: 100px 0;
+    position: relative;
+    border-bottom: 2px solid #fcebb6;
+}
+
+.hero-content h1 {
+    color: #856404; /* Chữ vàng nâu đậm cho sang trọng */
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.hero-content p {
+    color: #b08d21; /* Vàng đồng */
+    font-weight: 500;
+}
+
+/* 2. Phần Giới thiệu */
+.intro-text p.lead {
+    color: #664d03;
+    line-height: 1.8;
+}
+
+.text-highlight {
+    background-color: #ffecb5; /* Highlight vàng nhạt */
+    color: #856404;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* 3. Phần Giá trị cốt lõi - Tông màu vàng ấm */
+.about-values-v2 {
+    background-color: #fffdf5 !important; /* Vàng cực nhạt để phân tách khối */
+}
+
+.value-card {
+    background: #ffffff;
+    border: 1px solid #fcebb6; /* Viền vàng nhạt */
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 193, 7, 0.08); /* Đổ bóng hơi vàng */
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    background: #fff9e6;
+    border-color: #ffc107;
+}
+
+.icon-circle {
+    background: #fff3cd; /* Nền vòng tròn icon vàng nhạt */
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+
+/* 4. Phần Cam kết (Commitment Box) */
+.commitment-box {
+    background-color: #fff3cd; /* Vàng đặc trưng của Bootstrap Warning nhạt */
+    border-radius: 25px;
+    border: 1px dashed #ffc107;
+}
+
+.commit-item {
+    background: #ffffff;
+    color: #664d03;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 1px solid #fcebb6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 5. Tiêu đề các mục */
+.section-title {
+    color: #856404;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffc107;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
